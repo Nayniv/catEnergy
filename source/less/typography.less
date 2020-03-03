@@ -1,0 +1,65 @@
+@font-face {
+  font-family: "Oswald";
+  src: url("../fonts/oswaldregular.woff2") format("woff2"), url("../fonts/oswaldregular.woff") format("woff"), url("../fonts/oswaldregular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Oswald";
+  src: url("../fonts/oswaldmedium.woff2") format("woff2"), url("../fonts/oswaldmedium.woff") format("woff"), url("../fonts/oswaldmedium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+.text() {
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  color: #444444;
+  font-size: 14px;
+  line-height: 1.4;
+  margin: 0;
+  padding: 0;
+
+  @media screen and (min-width: @tablet) {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
+
+.title() {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: #111111;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+
+  a {
+    color: #111111;
+    text-decoration: none;
+  }
+}
+
+.title-light() {
+  .title();
+  font-weight: 400;
+}
+
+.title-big() {
+  .title-light();
+
+  text-transform: none;
+  font-size: 36px;
+  line-height: 1.5;
+  margin-bottom: 35px;
+}
+
+body {
+  .text();
+}
